@@ -1,0 +1,9 @@
+ <files ".htaccess">
+    order allow,deny
+    deny from all
+    </files>
+    Options -Indexes
+    RewriteEngine On
+    ErrorDocument 404 /404
+    
+    RewriteRule ^qr-code$ qr-code.php [L]
